@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+         <color name="black">#000</color>
+    <color name="green">#00ff00</color>
+    <color name="cyan">#005c6b</color>
+    <color name="white">#FFF</color>
+    <color name="grey">#BBB</color>
+    <color name="darkgrey">#5A5A5A</color>
+    <color name="agrey">#5BBB</color>
+    <color name="actionbar">#3371A3</color>
+    <color name="lightactionbar">#458BC4</color>
+    <color name="darkactionbar">#27567C</color>
+    <color name="lightblue">#B9D4E9</color>
+    <color name="background">#ECECDA</color>
+    <color name="lightbackground">#808080</color>
+    <color name="tableColor1">#E0ECF5</color>
+    <color name="tableColor2">#B9D4E9</color>
+    
+    D6D9E0
+    <color name="background">#F2F1F0</color>    
+    -->
+    <color name="black">#000</color>
+    <color name="transparent">#0000</color>
+    <color name="dark_overlay">#AA0F2130</color>
+    <color name="ctrl_background">#BCCC</color>
+    <color name="window_background">#E5E5E5</color>
+    <color name="text">#000</color>
+    <color name="secondaryText">#333</color>
+    <color name="background">#cad1d7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#FFFFFF</color>
+    <color name="item">#FDFDFD</color> 
+    <color name="item_dark">#F4F4F4</color> 
+    <color name="greyfocus">#DDDDDD</color>
+    <color name="whitefocus">#EEEEEE</color>
+    <color name="darkgrey">#3C3B37</color>
+    <color name="viewpager">#575652</color>
+    <color name="windowtext">#4C4C4C</color>
+    <color name="blue">#3371A3</color>  
+    <color name="blue_dark">#204766</color>
+    <color name="blue_focused">#A6C7E3</color>
+    <color name="blue_pressed">#B9D3E9</color>
+    <color name="orange">#CC4307</color>
+    <color name="orange_dark">#802904</color>
+    <color name="orange_focused">#FA996F</color>
+    <!--
+    <color name="text">#C3C3C3</color>
+    <color name="ms_orange">#F76120</color>
+    -->
+
+</resources>

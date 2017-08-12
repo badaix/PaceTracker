@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFilter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ctrl_background"
+        android:baselineAligned="false" >
+
+        <Spinner
+            android:id="@+id/spinnerDateFilter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="1dip"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/spinnerTypeFilter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="3dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <de.badaix.pacetracker.LockableViewPager
+        android:id="@+id/historyPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/historyTableLayoutStats"
+        android:layout_below="@+id/linearLayoutFilter" >
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/historyIndicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/control_background" />
+        
+<!--        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/historyIndicator"
+            style="@style/SmallFont.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/viewpager" />
+ -->
+    </de.badaix.pacetracker.LockableViewPager>
+
+<!--     <LinearLayout
+        android:id="@+id/adParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/historyTableLayoutStats"
+        android:orientation="vertical" >
+    </LinearLayout>
+ -->    
+
+    <LinearLayout
+        android:id="@+id/historyTableLayoutStats"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_overlay"
+        android:baselineAligned="false"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/historyTvTotalDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/historyTotalDuration"
+                android:textAppearance="@style/MediumFont.Inverse" />
+
+            <TextView
+                android:id="@+id/historyTvTotalDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/historyTotalDistance"
+                android:textAppearance="@style/MediumFont.Inverse" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/historyTvNumSessions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/historyNumSessions"
+                android:textAppearance="@style/MediumFont.Inverse" />
+
+            <TextView
+                android:id="@+id/historyTvMeanSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/historyMeanSpeed"
+                android:textAppearance="@style/MediumFont.Inverse" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutNoSessions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/noSessions"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonStartNewSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="@string/startNewSession" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

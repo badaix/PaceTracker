@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="de.badaix.pacetracker">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:backupAgent="de.badaix.pacetracker.MyPrefsBackupAgent"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:restoreAnyVersion="true"
+        android:theme="@style/app_theme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name=".activity.ActivityPaceTracker"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActivityNewSession"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+
+        <service android:name="de.badaix.pacetracker.session.SessionService">
+        </service>
+
+        <activity
+            android:name=".activity.ActivityGlobalSettings"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActivitySession"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".activity.ActivitySessionHistory"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.ActivityAbout"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.ActivityMap"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.ActivityViewSession"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.ActivityEditSession"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.ActivityManualSession"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.ActivityTest"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.dailymile.DailyMileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.ActivityViewRoute"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+
+                <data android:scheme="kml"/>
+                <data android:scheme="gpx"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+
+                <data android:mimeType="application/vnd.google-earth.kml+xml"/>
+                <data android:mimeType="application/gpx"/>
+                <data android:mimeType="application/gpx+xml"/>
+                <data android:mimeType="application/vnd.google-earth.gpx"/>
+                <data android:mimeType="application/vnd.google-earth.gpx+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="file"/>
+                <data android:pathPattern=".*\\.kml"/>
+                <data android:pathPattern=".*\\.gpx"/>
+                <data android:host="*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActivityRoutes"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.ActivityPlanRoute"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".social.dailymile.DailyMileAuth"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="false">
+        </activity>
+        <activity
+            android:name=".activity.dailymile.DailyMilePostNoteActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.dailymile.DailyMileUserActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.dailymile.DailyMileFriendsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name=".activity.dailymile.DailyMileEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <service android:name=".InitService">
+        </service>
+
+        <service android:name=".maps.OfflineDownloader">
+        </service>
+
+        <activity android:name=".maps.DownloadActivity">
+        </activity>
+
+        <service android:name=".posprovider.GpsService">
+        </service>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="INSERT KEY"/>
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="INSERT KEY"/>
+        <meta-data
+            android:name="open_weather_map.api_key"
+            android:value="INSERT KEY"/>
+        <meta-data
+            android:name="map_quest.api_key"
+            android:value="INSERT KEY"/>
+        <meta-data
+            android:name="dailymile.Client_ID"
+            android:value="INSERT KEY"/>
+        <meta-data
+            android:name="dailymile.Client_Seccret"
+            android:value="INSERT KEY"/>
+
+    </application>
+
+</manifest>

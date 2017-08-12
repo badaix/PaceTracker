@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="1"
+                tools:context=".activity.PaceTrackerActivity">
+
+    <de.badaix.pacetracker.views.DashboardLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dashboard"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+        <!--         android:layout_above="@+id/adParent" -->
+
+        <de.badaix.pacetracker.widgets.ScaleButton
+            android:id="@+id/dashboard_button_new_session"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/dashboard_button_new_session"
+            android:text="@string/mainMenuNewSession"/>
+
+        <de.badaix.pacetracker.widgets.ScaleButton
+            android:id="@+id/dashboard_button_history"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/dashboard_button_history"
+            android:text="@string/mainMenuSessionHistory"/>
+
+        <de.badaix.pacetracker.widgets.ScaleButton
+            android:id="@+id/dashboard_button_routes"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/dashboard_button_routes"
+            android:text="@string/mainMenuRoutes"/>
+
+        <de.badaix.pacetracker.widgets.ScaleButton
+            android:id="@+id/dashboard_button_dailymile"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/dashboard_button_dailymile"
+            android:text="@string/mainMenuDailyMile"/>
+
+        <de.badaix.pacetracker.widgets.ScaleButton
+            android:id="@+id/dashboard_button_settings"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/dashboard_button_settings"
+            android:text="@string/mainMenuSettings"
+            android:visibility="invisible"/>
+
+        <de.badaix.pacetracker.widgets.ScaleButton
+            android:id="@+id/dashboard_button_test"
+            style="@style/DashboardButton"
+            android:drawableTop="@drawable/dashboard_button_test"
+            android:text="test"
+            android:visibility="invisible"/>
+
+    </de.badaix.pacetracker.views.DashboardLayout>
+
+    <LinearLayout
+        android:id="@+id/adParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

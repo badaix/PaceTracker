@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:phl="http://schemas.android.com/apk/res-auto"
+                  android:persistent="true">
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory android:title="TEST">
+
+        <de.badaix.pacetracker.preferences.ColoredEditTextPreference
+            android:key="textPrefTest"
+            android:persistent="true"
+            android:summary="Summary"
+            android:title="Title">
+        </de.badaix.pacetracker.preferences.ColoredEditTextPreference>
+
+        <de.badaix.pacetracker.preferences.ColoredEditTextPreference
+            android:key="textPrefTest2"
+            android:persistent="true"
+            android:summary="Summary"
+            android:title="Title">
+        </de.badaix.pacetracker.preferences.ColoredEditTextPreference>
+
+        <de.badaix.pacetracker.preferences.ColoredIconListPreference
+            android:key="listPrefTest"
+            android:persistent="true"
+            android:summary="Summary"
+            android:title="Title">
+        </de.badaix.pacetracker.preferences.ColoredIconListPreference>
+
+        <de.badaix.pacetracker.preferences.ColoredIconListPreference
+            android:entries="@array/feelNames"
+            android:entryValues="@array/feelListValues"
+            android:key="feelPref"
+            android:persistent="true"
+            android:title="I felt..."
+            phl:entryImages="@array/feelImageValues">
+        </de.badaix.pacetracker.preferences.ColoredIconListPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+</PreferenceScreen>

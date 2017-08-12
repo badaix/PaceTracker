@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayoutNewSessionFooter"
+        android:listSelector="@android:color/transparent">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/control_background"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <de.badaix.pacetracker.widgets.GpsIndicator
+            android:id="@+id/linearLayoutGpsSignal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/frameLayout">
+        </de.badaix.pacetracker.widgets.GpsIndicator>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:id="@+id/llHrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.badaix.pacetracker.widgets.ImageViewHeart
+                    android:id="@+id/imageViewHeart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/tvHrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:text="--"
+                    android:textAppearance="@style/MediumFont"/>
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNewSessionFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_overlay"
+        android:gravity="center_horizontal"
+        android:paddingBottom="3dip"
+        android:paddingTop="5dip"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/buttonSessionStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:text="Start">
+
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

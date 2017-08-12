@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phl="http://schemas.android.com/apk/res-auto"
+    android:persistent="true">
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory android:title="@string/newSessionType" >
+
+        <EditTextPreference
+            android:key="textPrefDescription"
+            android:persistent="true"
+            android:summary="@string/newSessionDescriptionSummary"
+            android:title="@string/newSessionDescription" >
+        </EditTextPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory android:title="@string/editSessionComment" >
+
+        <EditTextPreference
+            android:key="textPrefComment"
+            android:persistent="true"
+            android:summary="@string/editSessionCommentSummary"
+            android:title="@string/editSessionComment" >
+        </EditTextPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory android:title="@string/iFelt" >
+
+        <de.badaix.pacetracker.preferences.IconListPreference
+            android:entries="@array/feelNames"
+            android:entryValues="@array/feelListValues"
+            android:key="listPrefFeel"
+            android:persistent="true"
+            android:title="@string/iFelt"
+            phl:entryImages="@array/feelImageValues" >
+        </de.badaix.pacetracker.preferences.IconListPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+</PreferenceScreen>

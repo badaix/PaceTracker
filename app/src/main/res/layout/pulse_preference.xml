@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip">
+
+        <CheckBox
+            android:id="@+id/cbEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newSessionUseSensor"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="3dip"
+            android:background="#495249"/>
+
+        <CheckBox
+            android:id="@+id/cbAlarmMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newSessionAlarmMinHr"/>
+
+        <de.badaix.pacetracker.widgets.SpinEdit
+            android:id="@+id/editMinPulse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:big_step="10"
+            app:default_value="60"
+            app:max_value="254"
+            app:min_value="0"
+            app:step="1">
+        </de.badaix.pacetracker.widgets.SpinEdit>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="3dip"
+            android:background="#495249"/>
+
+        <CheckBox
+            android:id="@+id/cbAlarmMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newSessionAlarmMaxHr"/>
+
+        <de.badaix.pacetracker.widgets.SpinEdit
+            android:id="@+id/editMaxPulse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:big_step="10"
+            app:default_value="170"
+            app:max_value="255"
+            app:min_value="1"
+            app:step="1">
+        </de.badaix.pacetracker.widgets.SpinEdit>
+    </LinearLayout>
+
+</ScrollView>

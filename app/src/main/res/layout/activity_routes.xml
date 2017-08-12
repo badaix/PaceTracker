@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listViewRoutes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/adParent"
+        android:layout_alignParentTop="true"
+        android:listSelector="@android:color/transparent">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNoRoutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/noRoutes"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <Button
+            android:id="@+id/buttonPlanNewRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="@string/planNewRoute"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSort"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/control_background"
+        android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/tvSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dip"
+            android:text="@string/sortBy"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/spinnerSort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</RelativeLayout>

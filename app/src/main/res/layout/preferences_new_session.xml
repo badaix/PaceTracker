@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:persistent="true" >
+
+    <!--
+     <PreferenceCategory android:key="newSessionPref"
+		android:persistent="false" android:title="GPS">
+		<Preference android:title="GPS"
+			android:summary="" android:key="customPrefGps" />
+	</PreferenceCategory>
+    -->
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:minHeight="40dp"
+        android:visibility="invisible" >
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory android:title="@string/newSessionType" >
+
+        <de.badaix.pacetracker.preferences.IconListPreference
+            android:key="listPrefType"
+            android:persistent="false" >
+        </de.badaix.pacetracker.preferences.IconListPreference>
+
+        <EditTextPreference
+            android:key="textPrefDescription"
+            android:persistent="true"
+            android:summary="@string/newSessionDescriptionSummary"
+            android:title="@string/newSessionDescription" >
+        </EditTextPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:key="prefCatGoal"
+        android:persistent="false"
+        android:title="@string/newSessionGoal" >
+
+        <de.badaix.pacetracker.preferences.AdvancedListPreference
+            android:key="listPrefGoal"
+            android:persistent="false"
+            android:summary="" >
+        </de.badaix.pacetracker.preferences.AdvancedListPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:key="newSessionPrefCat"
+        android:persistent="false"
+        android:title="@string/newSessionSettings" >
+
+        <de.badaix.pacetracker.preferences.PulsePreference
+            android:key="prefSensor"
+            android:persistent="false"
+            android:title="@string/globalPrefSectionSensor" >
+        </de.badaix.pacetracker.preferences.PulsePreference>
+
+        <CheckBoxPreference
+            android:key="cbPrefAutoStart"
+            android:persistent="false"
+            android:summary="@string/newSessionSettingsAutoStartSummary"
+            android:title="@string/newSessionSettingsAutoStart" >
+        </CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:key="cbPrefAutoPause"
+            android:persistent="false"
+            android:summary="@string/newSessionSettingsAutoPauseSummary"
+            android:title="@string/newSessionSettingsAutoPause" >
+        </CheckBoxPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:minHeight="10dp"
+        android:visibility="invisible" >
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+</PreferenceScreen>

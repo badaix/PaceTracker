@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="feelNames">
+        <item>@string/feltGREAT</item>
+        <item>@string/feltGOOD</item>
+        <item>@string/feltALRIGHT</item>
+        <item>@string/feltBLAH</item>
+        <item>@string/feltTIRED</item>
+        <item>@string/feltINJURED</item>
+        <item>@string/feltNONE</item>
+    </string-array>
+    <string-array name="feelListValues">
+        <item>"great"</item>
+        <item>"good"</item>
+        <item>"alright"</item>
+        <item>"blah"</item>
+        <item>"tired"</item>
+        <item>"injured"</item>
+        <item>""</item>
+    </string-array>
+
+    <array name="feelImageValues">
+        <item>@drawable/smiley_great</item>
+        <item>@drawable/smiley_good</item>
+        <item>@drawable/smiley_alright</item>
+        <item>@drawable/smiley_blah</item>
+        <item>@drawable/smiley_tired</item>
+        <item>@drawable/smiley_injured</item>
+        <item>@drawable/transparent</item>
+    </array>
+
+    <string-array name="routeTypeNames">
+        <item>@string/routeTypeFastest</item>
+        <item>@string/routeTypeShortest</item>
+        <item>@string/routeTypePedestrian</item>
+<!--         <item>@string/routeTypeMultimodal</item>  -->
+        <item>@string/routeTypeBicycle</item>
+    </string-array>
+    <string-array name="routeTypeValues">
+        <item>"fastest"</item>
+        <item>"shortest"</item>
+        <item>"pedestrian"</item>
+<!--         <item>"multimodal"</item>  -->
+        <item>"bicycle"</item>
+    </string-array>
+    <array name="routeTypeImages">
+        <item>@drawable/car</item>
+        <item>@drawable/car</item>
+        <item>@drawable/running</item>
+<!--         <item>@drawable/icon</item> -->
+        <item>@drawable/cycling</item>
+    </array>
+    
+    <string-array name="routeStrategyNames">
+        <item>@string/routeStrategy_DEFAULT_STRATEGY</item>
+        <item>@string/routeStrategy_AVOID_UP_HILL</item>
+        <item>@string/routeStrategy_AVOID_DOWN_HILL</item>
+        <item>@string/routeStrategy_AVOID_ALL_HILLS</item>
+        <item>@string/routeStrategy_FAVOR_UP_HILL</item>
+        <item>@string/routeStrategy_FAVOR_DOWN_HILL</item>
+        <item>@string/routeStrategy_FAVOR_ALL_HILLS</item>
+    </string-array>
+    <string-array name="routeStrategyValues">
+        <item>"DEFAULT_STRATEGY"</item>
+        <item>"AVOID_UP_HILL"</item>
+        <item>"AVOID_DOWN_HILL"</item>
+        <item>"AVOID_ALL_HILLS"</item>
+        <item>"FAVOR_UP_HILL"</item>
+        <item>"FAVOR_DOWN_HILL"</item>
+        <item>"FAVOR_ALL_HILLS"</item>
+    </string-array>
+
+    <string-array name="routeLocaleNames">
+        <item>@string/routeLocale_en_GB</item>
+        <item>@string/routeLocale_en_US</item>
+        <item>@string/routeLocale_da_DK</item>
+        <item>@string/routeLocale_nl_NL</item>
+        <item>@string/routeLocale_fr_FR</item>
+        <item>@string/routeLocale_de_DE</item>
+        <item>@string/routeLocale_it_IT</item>
+        <item>@string/routeLocale_no</item>
+        <item>@string/routeLocale_es</item>
+        <item>@string/routeLocale_sv_SE</item>
+    </string-array>
+    <string-array name="routeLocaleValues">
+        <item>"en_GB"</item>
+        <item>"en_US"</item>
+        <item>"da_DK"</item>
+        <item>"nl_NL"</item>
+        <item>"fr_FR"</item>
+        <item>"de_DE"</item>
+        <item>"it_IT"</item>
+        <item>"no"</item>
+        <item>"es"</item>
+        <item>"sv_SE"</item>
+    </string-array>
+
+    <string-array name="unitNames">
+        <item>@string/unitImperial</item>
+        <item>@string/unitMetric</item>
+    </string-array>
+    <string-array name="unitValues">
+        <item>"IMPERIAL"</item>
+        <item>"METRIC"</item>
+    </string-array>
+    
+    <string-array name="dateFilterNames">
+    	<item>@string/dateFilterEver</item>
+	    <item>@string/dateFilterWeek</item>
+	    <item>@string/dateFilterTwoWeeks</item>
+		<item>@string/dateFilterMonth</item>
+		<item>@string/dateFilterThreeMonth</item>
+		<item>@string/dateFilterSixMonth</item>
+		<item>@string/dateFilterYear</item>
+    </string-array>
+    <integer-array name="dateFilterValues">
+        <item>0</item>
+        <item>7</item>
+        <item>14</item>
+        <item>31</item>
+		<item>92</item>
+		<item>182</item>
+		<item>365</item>
+    </integer-array>
+        
+    	
+    <string-array name="speach_interval_duration">
+        <item>@string/si_duration_0</item>
+        <item>@string/si_duration_60</item>
+        <item>@string/si_duration_120</item>
+        <item>@string/si_duration_180</item>
+        <item>@string/si_duration_240</item>
+        <item>@string/si_duration_300</item>
+        <item>@string/si_duration_360</item>
+        <item>@string/si_duration_420</item>
+        <item>@string/si_duration_480</item>
+        <item>@string/si_duration_540</item>
+        <item>@string/si_duration_600</item>
+    </string-array>
+
+    <string-array name="speach_interval_duration_values">
+        <item>0</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+		<item>240</item>
+		<item>300</item>
+		<item>360</item>
+		<item>420</item>
+		<item>480</item>
+        <item>540</item>
+        <item>600</item>
+    </string-array>
+    
+    <string-array name="speach_interval_distance">
+        <item>@string/si_distance_0</item>
+        <item>@string/si_distance_500</item>
+        <item>@string/si_distance_1000</item>
+        <item>@string/si_distance_2000</item>
+        <item>@string/si_distance_3000</item>
+        <item>@string/si_distance_4000</item>
+        <item>@string/si_distance_5000</item>
+    </string-array>
+
+    <string-array name="speach_interval_distance_values">
+        <item>0</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+		<item>3000</item>
+		<item>4000</item>
+		<item>5000</item>
+    </string-array>
+    
+    
+    <string-array name="wind_dir_array">
+		<item>N</item>
+		<item>NNE</item>
+		<item>NE</item>
+		<item>ENE</item>
+		<item>E</item>
+		<item>ESE</item>
+		<item>SE</item>
+		<item>SSE</item>
+		<item>S</item>
+		<item>SSW</item>
+		<item>SW</item>
+		<item>WSW</item>
+		<item>W</item>
+		<item>WNW</item>
+		<item>NW</item>
+		<item>NNW</item>
+    </string-array>
+        
+    
+    <string-array name="weather_array">
+        <item>thunderstorm with light rain</item>
+        <item>thunderstorm with rain</item>
+        <item>thunderstorm with heavy rain</item>
+        <item>light thunderstorm</item>
+        <item>thunderstorm</item>
+        <item>heavy thunderstorm</item>
+        <item>ragged thunderstorm</item>
+        <item>thunderstorm with light drizzle</item>
+        <item>thunderstorm with drizzle</item>
+        <item>thunderstorm with heavy drizzle</item>
+        <item>light intensity drizzle</item>
+        <item>drizzle</item>
+        <item>heavy intensity drizzle</item>
+        <item>light intensity drizzle rain</item>
+        <item>drizzle rain</item>
+        <item>heavy intensity drizzle rain</item>
+        <item>shower rain and drizzle</item>
+        <item>heavy shower rain and drizzle</item>
+        <item>shower drizzle</item>
+        <item>light rain</item>
+        <item>moderate rain</item>
+        <item>heavy intensity rain</item>
+        <item>very heavy rain</item>
+        <item>extreme rain</item>
+        <item>freezing rain</item>
+        <item>light intensity shower rain</item>
+        <item>shower rain</item>
+        <item>heavy intensity shower rain</item>
+        <item>ragged shower rain</item>
+        <item>light snow</item>
+        <item>snow</item>
+        <item>heavy snow</item>
+        <item>sleet</item>
+        <item>shower sleet</item>
+        <item>light rain and snow</item>
+        <item>rain and snow</item>
+        <item>light shower snow</item>
+        <item>shower snow</item>
+        <item>heavy shower snow</item>
+        <item>mist</item>
+        <item>smoke</item>
+        <item>haze</item>
+        <item>sand, dust whirls</item>
+        <item>fog</item>
+        <item>sand</item>
+        <item>dust</item>
+        <item>volcanic ash</item>
+        <item>squalls</item>
+        <item>tornado</item>
+        <item>clear sky</item>
+        <item>few clouds</item>
+        <item>scattered clouds</item>
+        <item>broken clouds</item>
+        <item>overcast clouds</item>
+        <item>tornado</item>
+        <item>tropical storm</item>
+        <item>hurricane</item>
+        <item>cold</item>
+        <item>hot</item>
+        <item>windy</item>
+        <item>hail</item>
+        <item>calm</item>
+        <item>light breeze</item>
+        <item>gentle breeze</item>
+        <item>moderate breeze</item>
+        <item>fresh breeze</item>
+        <item>strong breeze</item>
+        <item>high wind, near gale</item>
+        <item>gale</item>
+        <item>severe gale</item>
+        <item>storm</item>
+        <item>violent storm</item>
+        <item>hurricane</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?android:attr/colorBackground" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/download_note"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvSources"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="Sources"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:text="@string/min_zoom"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <de.badaix.pacetracker.widgets.SpinEdit
+                    android:id="@+id/editMinZoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    app:big_step="1"
+                    app:default_value="0"
+                    app:max_value="15"
+                    app:min_value="0"
+                    app:step="1" >
+                </de.badaix.pacetracker.widgets.SpinEdit>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:text="@string/max_zoom"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <de.badaix.pacetracker.widgets.SpinEdit
+                    android:id="@+id/editMaxZoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    app:big_step="1"
+                    app:default_value="15"
+                    app:max_value="16"
+                    app:min_value="1"
+                    app:step="1" >
+                </de.badaix.pacetracker.widgets.SpinEdit>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:text="@string/margin"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <de.badaix.pacetracker.widgets.SpinEdit
+                    android:id="@+id/editMargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    app:big_step="500"
+                    app:default_value="0"
+                    app:max_value="2000"
+                    app:min_value="0"
+                    app:step="100" >
+                </de.badaix.pacetracker.widgets.SpinEdit>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tvTiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</ScrollView>

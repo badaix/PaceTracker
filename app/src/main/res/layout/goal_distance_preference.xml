@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<de.badaix.pacetracker.preferences.DecimalPreference xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="decimalPrefGoalDistance"
+    android:persistent="true"
+    android:title="@string/manualSessionDistance" >
+
+</de.badaix.pacetracker.preferences.DecimalPreference>

@@ -1,0 +1,110 @@
+**-open History: FakeGpsPositionProvider|stop
+*-GPS fix from NewSession to Session
+**-OverviewFragment: HxM in onCreate (Session = null)
+
+Settings:
+**-Speak translation & summary
+**-Disable inactive speech settings
+**-Import sessions: similar to tile download
+**-Export sessions
+/-disable Speech settings if TTS is not installed
+
+History:
+**-Graph label colors
+**-Filter icon
+**-Fix attach route
+**-Adapt history items to small screen
+**-Remove replay
+**-Remove export CSV
+*-Felt icons in post to daily mile
+*-Felt None
+*-Some description if there are no Sessions
+*-Earth view
+/-Change export to combo box and general send intent
+*-Post to G+
+
+New Session:
+*-Store sensor settings
+*-Navigation settings: announce instructions
+*-change constructor of SessionSettings to not store itself in GlobalSettings
+*-Description: old one is "there", but hidden
+
+Session:
+*-Sensor alarming
+*-Auto scroll map during session
+*-Close GPS, BlueTooth
+*-Light icons
+-Auto start => Auto start, stop (last "movement" is stop time)
+
+Session view:
+**-Graph label colors
+*-Filter: remove pulse from filter in graph view if not available
+*-Show hxm data (mean, max)
+*-Add some of the history list options to action bar (post session, ...)
+*-Line breaks in comment & description
+
+Routes:
+**-View route caption?!? (Lanzarote) => Route name & description to & from json
+**-Instructions icon size
+*-Some description if there are no Routes
+
+Daily mile:
+**-remove separator for empty entries
+*-Handle offline: show some text
+*-Hide me, friends and post buttons if not logged in 
+
+Tile download:
+*-Abort/Resume
+*-Retry failed
+*-Open download dialog on notification click (when done)
+
+Goal:
+*-let GUI poll for updates
+*-Route overview item
+
+About:
+*-Version history
+*-Copyrights (Maps, weather, route planner, ABS)
+
+General:
+**-Icons: Inline, Segeln
+*-Copyright for planned routes
+*-Create file for manual session
+*-Debug settings (Text GPS, ...)
+*-GPX import
+*-String ids
+*-Post Workout translation
+*-Smoothing of graph views
+*-About: AChartEngine, OpenSeaMap
+*-Check validity of downloaded images before storing them
+*-En Translation
+*-Humidity, Wind speed mph
+*-Hide "upload route" in post to DM if no route is available
+*-User weight in lbs
+*-Preference value text on small screens
+*-Hide "no routes" after DM download
+*-Import/Export Routes
+*-Wurmtalrunde 9.5.: Route fehlt, Comment, Description, DailyMile ID, ...
+*-Import Session if newer, Goal route filename vs id
+*-Auto start if distance >= x meters from initial pos
+*-G+ postings
+*-Don't speak if PhoneState != IDLE
+*-Tut nicht: Ziel erreicht nacht...
+*-Rename history filter as in YouTube
+*-Pro & Ads: Pulse, Weather, Ads
+-Pro public key
+
+Features:
+-Google drive sync
+-Facebook postings
+
+Bugs:
+*-Routes: "to" sometimes empty?!?
+*-OpenSeaMap not found: java.io.IOException: Error decoding tile
+/-GPS fix without satellites
+*-PaceTracker beep installation
+-KML parser
+-Map mem leak
+-Map download activity empty (service killed?!?)
+-Offline map: 05-20 10:52:58.320: D/skia(23105): --- SkImageDecoder::Factory returned null
+

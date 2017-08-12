@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:key="prefCatVoiceFeedback"
+        android:title="@string/globalPrefSectionVoiceFeedback" >
+
+        <de.badaix.pacetracker.preferences.SpeechPreference
+            android:key="prefVoiceFeedback"
+            android:title="@string/globalPrefNotify" >
+        </de.badaix.pacetracker.preferences.SpeechPreference>
+
+        <de.badaix.pacetracker.preferences.SeekBarPreference
+            android:key="ttsVolumePref"
+            android:persistent="true"
+            android:title="@string/globalPrefVolume" >
+        </de.badaix.pacetracker.preferences.SeekBarPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:key="prefCatUser"
+        android:title="@string/globalPrefSectionUser" >
+
+        <de.badaix.pacetracker.preferences.DecimalPreference
+            android:defaultValue="75.0"
+            android:key="decimalPrefWeight"
+            android:persistent="false"
+            android:title="@string/globalPrefWeight" >
+        </de.badaix.pacetracker.preferences.DecimalPreference>
+
+        <!--
+       <Preference
+            android:defaultValue=""
+            android:key="dailymilePref"
+            android:persistent="false"
+            android:title="@string/dailymile" >
+        </Preference>
+        -->
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:key="prefCatUnits"
+        android:title="@string/globalPrefSectionUnits" >
+
+        <de.badaix.pacetracker.preferences.AdvancedListPreference
+            android:defaultValue="metric"
+            android:entries="@array/unitNames"
+            android:entryValues="@array/unitValues"
+            android:key="listPrefUnits"
+            android:persistent="false"
+            android:title="@string/globalPrefUnits" >
+        </de.badaix.pacetracker.preferences.AdvancedListPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:key="prefCatSensor"
+        android:title="@string/globalPrefSectionSensor" >
+
+        <Preference
+            android:key="prefBtPairing"
+            android:title="@string/globalPrefBtPairing" >
+        </Preference>
+
+        <de.badaix.pacetracker.preferences.AdvancedListPreference
+            android:defaultValue=""
+            android:key="listPrefBtSensor"
+            android:persistent="true"
+            android:title="@string/globalPrefBtSensor" >
+        </de.badaix.pacetracker.preferences.AdvancedListPreference>
+
+        <de.badaix.pacetracker.preferences.ValuePreference
+            android:key="prefPulseAlarm"
+            android:title="@string/globalPrefAlarmNoise" >
+        </de.badaix.pacetracker.preferences.ValuePreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:key="prefCatBackup"
+        android:title="@string/globalPrefBackupRestore" >
+
+        <Preference
+            android:key="prefImport"
+            android:title="@string/importSessions" >
+        </Preference>
+
+        <Preference
+            android:key="prefExport"
+            android:title="@string/exportSessions" >
+        </Preference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+    
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory
+        android:minHeight="10dp"
+        android:visibility="invisible" >
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+    
+</PreferenceScreen>

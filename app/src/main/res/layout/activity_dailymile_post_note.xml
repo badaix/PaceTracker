@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" >
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_overlay"
+        android:gravity="center_horizontal"
+        android:paddingBottom="3dip"
+        android:paddingTop="5dip"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/btnPostNote"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:text="@string/send" >
+
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

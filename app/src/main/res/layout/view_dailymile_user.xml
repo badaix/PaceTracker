@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@drawable/my_drawable" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/LinearLayout01"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginBottom="6dip"
+              android:background="#E0E0E0"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item"
+        android:orientation="horizontal"
+        android:paddingBottom="2dip"
+        android:paddingRight="5dip"
+        android:paddingTop="2dip"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tvDmUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingLeft="5dip"
+            android:text="Username"
+            android:textAppearance="@style/MediumFont"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@color/blue"
+        android:paddingRight="2dip"/>
+
+    <LinearLayout
+        android:id="@+id/llDmEntry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip">
+
+        <ImageView
+            android:id="@+id/ivDmUser"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/user_profile"/>
+
+        <TextView
+            android:id="@+id/tvDmLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Location"
+            android:textAppearance="@style/MediumFont"/>
+
+        <TextView
+            android:id="@+id/tvDmGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Goal"
+            android:textAppearance="@style/MediumFont"/>
+
+        <TextView
+            android:id="@+id/tvDmFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Friends"
+            android:textAppearance="@style/MediumFont"/>
+    </LinearLayout>
+
+</LinearLayout>

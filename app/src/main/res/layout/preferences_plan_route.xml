@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phl="http://schemas.android.com/apk/res-auto"
+    android:persistent="true" >
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory android:title="@string/routeFromTo" >
+
+        <de.badaix.pacetracker.preferences.AutoCompleteEditTextPreference
+            android:key="textPrefFrom"
+            android:persistent="true"
+            android:summary=""
+            android:title="@string/routeFrom" >
+        </de.badaix.pacetracker.preferences.AutoCompleteEditTextPreference>
+
+        <de.badaix.pacetracker.preferences.AutoCompleteEditTextPreference
+            android:key="textPrefTo"
+            android:persistent="true"
+            android:summary=""
+            android:title="@string/routeTo" >
+        </de.badaix.pacetracker.preferences.AutoCompleteEditTextPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+    <de.badaix.pacetracker.preferences.ColoredPreferenceCategory android:title="@string/routeSettings" >
+
+        <de.badaix.pacetracker.preferences.IconListPreference
+            android:key="listPrefRouteType"
+            android:persistent="true"
+            android:summary=""
+            android:entries="@array/routeTypeNames"
+            android:entryValues="@array/routeTypeValues"
+            phl:entryImages="@array/routeTypeImages"
+            android:title="@string/routeType" >
+        </de.badaix.pacetracker.preferences.IconListPreference>
+
+        <de.badaix.pacetracker.preferences.AdvancedListPreference
+            android:key="listPrefRouteStrategy"
+            android:persistent="true"
+            android:summary=""
+            android:entries="@array/routeStrategyNames"
+            android:entryValues="@array/routeStrategyValues"
+            android:title="@string/routeStrategy" >
+        </de.badaix.pacetracker.preferences.AdvancedListPreference>
+
+        <de.badaix.pacetracker.preferences.AdvancedListPreference
+            android:key="listPrefRouteLocale"
+            android:persistent="true"
+            android:summary=""
+            android:entries="@array/routeLocaleNames"
+            android:entryValues="@array/routeLocaleValues"
+            android:title="@string/routeLocale" >
+        </de.badaix.pacetracker.preferences.AdvancedListPreference>
+    </de.badaix.pacetracker.preferences.ColoredPreferenceCategory>
+
+</PreferenceScreen>

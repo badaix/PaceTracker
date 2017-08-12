@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PaceTracker</string>
+
+    <string name="fb_post_caption">Track your workouts</string>
+    <string name="fb_post_description">PaceTracker GPS Sport-Tracker mit dailymile und Open Street Map Unterstützung</string>
+    
+    <string name="noPulse">Der Puls-Graph ist nur in der Pro-Version verfügbar.\nWillst Du mehr über die Pro Version erfahren?</string>
+    <string name="noPulseAlarm">Puls-Alarm ist nur in der Pro-Version verfügbar.\nWillst Du mehr über die Pro Version erfahren?</string>
+    <string name="onlyInPro">Nur in der Pro-Version verfügbar</string>
+    <string name="proWeather">\"PaceTracker Pro\" speichert zu jeder Session das aktuelle Wetter</string>
+    <string name="proHeartRate">\"PaceTracker Pro\" bietet einen Puls-Graph und unterstützt akustischen Puls-Alarm</string>
+    <string name="proNoAds">\"PaceTracker Pro\" zeigt keine Werbung an</string>
+    <string name="proThanks">Vielen Dank für das Upgade auf die Pro Version!</string>
+    <string name="proAlready">Danke, Du hast bereits das Upgrade auf die Pro Version!</string>
+    <string name="proUpgrade">Upgrade</string>
+    
+    <!-- Map & Tiles -->
+   	<string name="map">Karte</string>
+   	<string name="map_type">Karte</string>
+	<string name="base_tiles">Karte</string>
+	<string name="overlay_tiles">Overlay</string>
+	<string name="tiles">Kacheln</string>
+	<string name="min_zoom">Min Zoom</string>
+	<string name="max_zoom">Max Zoom</string>
+	<string name="download_note">Hinweis: Die maximale Anzahl an Kacheln ist auf 2000 limitiert</string>
+	<string name="margin">Rand [m]</string>
+	<string name="tile_download">Karten Download</string>
+	<string name="downloading_tiles">Lade Karte herunter</string>
+	<string name="downloading">Downloading</string>
+	<string name="download_completed">Download beended</string>
+	<string name="download_canceled">Download abgebrochen</string>
+ 	<string name="end">Ende</string>        
+ 	<string name="start">Start</string>        
+    <string name="baseMap">Basiskarte</string>
+    <string name="overlayMap">Overlay</string>
+ 		
+    <!-- DownloadActivity -->
+	<string name="close">Schließen</string>
+	<string name="retry">Wiederholen</string>
+	<string name="abort">Abbrechen</string>
+
+    <!-- Actions -->
+	<string name="share">Teilen</string>
+    <string name="dailymile">dailymile</string>
+    <string name="facebook">facebook</string>
+    <string name="googlePlus">Google+</string>
+	<string name="lock">Lock</string>
+	<string name="add">Hinzufügen</string>
+	<string name="filter">Filter</string>
+	<string name="dmRouteImport">DailyMile Import</string>
+    <string name="planMapQuest">Plane mit MapQuest</string>
+    <string name="downloadMap">Karte herunterladen</string>
+    	
+    <!-- Route import -->
+   	<string name="dmFetchingRoutes">Lade Routen herunter...</string>        
+	<string name="totalRoutes">Routen insgesamt</string>        
+ 	<string name="newRoutes">Neue Routen</string>        
+ 	<string name="error">Fehler</string>        
+ 	<string name="noRoutesFound">Keine Routen gefunden. Um Routen hinzuzufügen, besuche dailymile.com und navigiere zu Community|Routes</string>
+
+    <!-- Google Earth -->
+ 	<string name="installEarth">Google Earth ist nicht installiert. Jetzt vom Play Store herunterladen?</string>
+ 	<string name="installPlus">Google+ ist nicht installiert. Jetzt vom Play Store herunterladen?</string>
+ 	<string name="loginDailymile">Du bist nicht eingeloggt. Willst Du Dich jetzt bei dailymile einloggen?</string>
+	<string name="viewEarth">In Google Earth abspielen</string>
+    <string name="creatingTour">Erzeuge Tour</string>
+
+    <!-- Sessions -->
+    <string name="session">Session</string>
+    <string name="sessions">Sessions</string>
+    <string name="sessionCar">Autofahren</string>
+    <string name="sessionCycling">Fahrradfahren</string>
+    <string name="sessionHiking">Wandern</string>
+    <string name="sessionInline">Inline</string>
+    <string name="sessionRunning">Laufen</string>
+    <string name="sessionSailing">Segeln</string>
+    <string name="sessionScooter">Rollerfahren</string>
+
+    <!-- TTS & units -->
+    <string name="kilometers">Kilometer</string>
+    <string name="kilometer">Kilometer</string>
+    <string name="miles">Meilen</string>
+    <string name="mile">Meile</string>
+    <string name="nauticMiles">Nautische Meilen</string>
+    <string name="nauticMile">Nautische Meile</string>
+    <string name="yards">Yard</string>
+    <string name="yard">Yard</string>
+    <string name="meters">Meter</string>
+    <string name="meter">Meter</string>
+
+    <!-- Goals -->
+    <string name="configureGoal">Bitte konfiguriere das Ziel</string>
+    <string name="goalStandard">Standard Training</string>
+    <string name="goalReached">Ziel erreicht</string>
+    <string name="goalDistance">Distanz</string>
+    <string name="goalDistanceFinished">Erreicht nach</string>
+    <string name="configureDistance">Distanz ändern</string>
+    <string name="distanceLeft">Distanz zum Ziel</string>
+    <string name="goalDuration">Dauer</string>
+    <string name="goalDurationFinished">Zurückgelete Strecke</string>
+    <string name="configureDuration">Dauer ändern</string>
+    <string name="timeLeft">Zeit zum Ziel</string>
+    <string name="goalRoute">Navigation</string>
+    <string name="configureRoute">Wähle Route</string>
+    <string name="speechNavigation">Sprach-Navigation (Beta)</string>
+
+    <!-- ActivitySessionHistory -->
+    <string name="filterType">Typ:</string>
+    <string name="filterDate">Wann:</string>
+    <string name="exportEMail">Email recipient</string>
+ 	<string name="historyExportSession">Exportiere Session&#8230;</string>        
+ 	<string name="historyCreatingGpx">Erzeuge GPX datei&#8230;</string>        
+ 	<string name="historyPostSession">Poste Session&#8230;</string>        
+ 	<string name="historyUploadingGpx">Uploade GPX datei&#8230;</string>        
+ 	<string name="noSessionsToDisplay">Keine Sessions vorhanden</string>        
+	<string name="error_posting_session">Fehler beim posten der Session</string>
+	<string name="error_exporting_session">Fehler beim Exportieren</string>
+	<string name="confirm_delete_session">Willst Du die Session wirklich löschen?</string>
+ 	
+    <!-- FragmentSessionHistory -->
+    <string name="typeFilterAll">Alle Aktivitäten</string>
+    <string name="historyTotalDuration">Dauer</string>
+    <string name="historyTotalDistance">Distanz</string>
+    <string name="historyNumSessions">Sessions</string>
+    <string name="historyMeanSpeed">Geschw.</string>
+    <string name="historyMenuOpen">Öffnen</string>
+    <string name="historyMenuReplay">Wiederholen</string>
+	<string name="historyMenuPostDm">Poste zu Dailymile</string>
+	<string name="historyMenuPostGp">Poste zu Google+</string>
+	<string name="historyMenuPostFb">Poste zu Facebook</string>
+	<string name="historyMenuExport">Exportieren</string>
+    <string name="historyMenuDelete">Löschen</string>
+    <string name="historyList">Liste</string>
+    <string name="historyGraph">Graph</string>
+    <string name="noSessions">Noch keine Session absolviert</string>
+    <string name="startNewSession">Neue Session starten</string>
+
+    <!-- FragmentSessionOverview -->
+    <string name="startItemName">Start</string>
+    <string name="endItemName">Ende</string>
+    <string name="distanceItemName">Distanz</string>
+    <string name="caloriesItemName">Kalorien</string>
+    <string name="timeItemName">Dauer</string>
+    <string name="descriptionItemName">Beschreibung</string>
+    <string name="commentItemName">Kommentar</string>
+    <string name="totalTimeItemName">Absolute Dauer</string>
+    <string name="speedItemName">Geschwindigkeit</string>
+    <string name="averageSpeedItemName">Durchsch. Geschw.</string>
+    <string name="maxSpeedItemName">Max Geschw.</string>
+    <string name="averagePaceItemName">Durchsch. Pace</string>
+    <string name="paceItemName">Pace</string>
+    <string name="speed">Geschwindigkeit</string>
+    <string name="elevation">Höhe</string>
+    <string name="show">Zeige</string>
+    <string name="heartRate">Puls</string>
+    <string name="meanHeartRate">Durchsch. Puls</string>
+    <string name="maxHeartRate">Maximaler Puls</string>
+    <string name="mean_max">Mittel/Max</string>
+    <string name="battery">Batterie</string>
+    <string name="weather">Wetter</string>
+    <string name="temperature">Temperatur</string>
+    <string name="humidity">Luftfeuchtigkeit</string>
+    <string name="wind">Wind</string>
+    
+    <!-- ToSpeech -->
+    <string name="oneHour">eine Stunde</string>
+    <string name="hours">Stunden</string>
+    <string name="oneMinute">eine Minute</string>
+    <string name="minutes">Minuten</string>
+    <string name="oneSecond">eine Sekunde</string>
+    <string name="seconds">Sekunden</string>
+    
+    <!-- Speech preferences -->
+    <string name="time">Zeit</string>
+    <string name="distance">Distanz</string>
+    <string name="totalTime">Gesamte Zeit</string>
+    <string name="totalDistance">Gesamte Distanz</string>
+
+    <!-- FragmentSessionPaceTable -->
+    <string name="lap">Runde</string>
+    <string name="colPace">Tempo</string>
+    <string name="colTime">Zeit</string>
+    <string name="colUp">auf</string>
+    <string name="colDown">ab</string>
+
+    <!-- ActivityPaceTracker -->
+    <string name="mainMenuNewSession">Neue Session</string>
+    <string name="mainMenuSessionHistory">Session Verlauf</string>
+    <string name="mainMenuSettings">Einstellungen</string>
+    <string name="mainMenuDailyMile">dailymile</string>
+    <string name="mainMenuRoutes">Routen</string>
+    <string name="mainMenuAbout">Über</string>
+
+    <!-- ActivityNewSession -->
+    <string name="newSessionType">Session Typ</string>
+    <string name="newSessionDescription">Beschreibung</string>
+    <string name="newSessionDescriptionSummary">z.B. Berlin Marathon, Standard Training, &#8230;</string>
+    <string name="newSessionGoal">Training</string>
+    <string name="newSessionGoalNavigation">Navigation</string>
+    <string name="newSessionChooseRoute">Wähle Route</string>
+    <string name="newSessionSettings">Einstellungen</string>
+    <string name="newSessionSettingsAutoStart">Auto-Start</string>
+    <string name="newSessionSettingsAutoStartSummary">Starte sobald Du Dich bewegst</string>
+    <string name="newSessionSettingsAutoPause">Auto-Pause</string>
+    <string name="newSessionSettingsAutoPauseSummary">Pause, wenn Du Dich nicht bewegst</string>
+    <string name="newSessionButtonStart">Start</string>
+    <string name="newSessionButtonGps">Aktiviere GPS</string>
+    <string name="newSessionButtonWaitFix">Warte auf GPS</string>
+    <string name="newSessionUseSensor">Benutze Sensor</string>
+    <string name="newSessionAlarmMinHr">Alarm min Puls</string>
+    <string name="newSessionAlarmMaxHr">Alarm max Puls</string>
+	<string name="dont_use_sensor">Kein Sensor</string>
+	<string name="min_hr">Min HR</string>
+	<string name="max_hr">Max HR</string>
+
+	<!-- Post to Dailymile -->
+	<string name="editSessionComment">Kommentar</string>
+    <string name="editSessionCommentSummary"></string>
+    <string name="iFelt">Ich fühlte mich</string>
+
+	<!-- Post to G+ -->
+	<string name="postBodyGplus">Ich war mit $app$ $distance$ $what$</string>
+ 
+    	<!-- ActivityManualSession -->
+    <string name="manualSessionDetails">Session Details</string>
+    <string name="manualSessionMiscDetails">Weitere Angaben</string>
+    <string name="manualSessionStart">Start</string>
+    <string name="manualSessionDuration">Dauer</string>
+    <string name="manualSessionDistance">Distanz</string>
+    <string name="manualSessionSave">Session speichern</string>
+    <string name="sessionCommentSummary">Kommentar zur Session</string>
+
+	<!-- Session stop -->
+    <string name="confirmStopSession">Stop session?</string>
+    <string name="saveSession">Session speichern</string>
+    <string name="editAndSaveSession">Session bearbeiten und speichern</string>
+    <string name="discardSession">Session verwerfen</string>
+
+	<!-- Global settings -->
+    <string name="globalSettings">Einstellungen</string>
+    <string name="globalPrefSectionVoiceFeedback">Sprachausgabe</string>
+    <string name="globalPrefNotify">Benachrichtigungen</string>
+    <string name="globalPrefVolume">Lautstärke</string>
+    <string name="globalPrefWeight">Gewicht</string>
+    <string name="globalPrefSectionUser">Benutzer</string>
+    <string name="globalPrefSectionUnits">Einheiten</string>
+    <string name="globalPrefUnits">Einheiten</string>
+    <string name="globalPrefSectionSensor">Sensor</string>
+    <string name="globalPrefBtPairing">Bluetooth-Pairing</string>
+    <string name="globalPrefBtSensor">BT-Sensor</string>
+    <string name="globalPrefDownloadTts">Installiere Text-to-speech</string>
+    <string name="globalPrefBackupRestore">Backup Sessions + Routen</string>
+    <string name="globalPrefAlarmNoise">Alarmton</string>
+    <string name="globalPrefSilent">Lautlos</string>
+    <string name="importSessions">Importiere</string>
+    <string name="exportSessions">Exportiere</string>
+    <string name="importing">Importiere</string>
+    <string name="exporting">Exportiere</string>
+    <string name="doImport">Importiere</string>
+    <string name="importMessage">Importiere Sessions + Routen aus:\nSDCard/PaceTracker/Import?</string>
+    <string name="exportMessage">Exportiere Sessions + Routen nach:\nSDCard/PaceTracker/Export?</string>
+    <string name="doExport">Exportiere</string>
+    <string name="noDevice">kein Sensor</string>
+    <string name="sessionImport">Session Import</string>
+    <string name="sessionExport">Session Export</string>
+    <string name="imported">Importiert</string>
+    <string name="exported">Exportiert</string>
+    <string name="failed">Fehlgeschlagen</string>
+
+	<!-- Fragments -->
+    <string name="fragmentPaceTable">Rundenzeiten</string>
+    <string name="fragmentOverview">Zusammenfassung</string>
+    <string name="fragmentMap">Karte</string>
+    <string name="fragmentGraph">Graph</string>
+    <string name="fragmentSegments">Instruktionen</string>
+
+	<!-- Dailymile -->
+    <string name="dailyMileAuth">dailymile</string>
+	<string name="friends">Freunde</string>
+	<string name="note">Mitteilung</string>
+	<string name="refresh">Aktualisieren</string>
+	<string name="not_authorized">Nicht angemeldet</string>
+	<string name="me">Ich</string>
+	<string name="photo">Foto</string>
+	<string name="comment">Kommentar</string>
+	<string name="comments">Kommentare</string>
+   	<string name="workout_title">Workout Titel</string>
+	<string name="how_did_it_go">Kommentar</string>
+	<string name="i_felt">Ich fühlte mich...</string>
+	<string name="attach_route">Route hochladen</string>
+	<string name="login">Login</string>
+    <string name="nearby">In der Nähe</string>
+    <string name="popular">Populär</string>
+    <string name="postNote">Kommentar senden</string>
+    <string name="send">Senden</string>
+    <string name="stream">Stream</string>
+    <string name="entry">Eintrag</string>
+    <string name="album_name">PaceTracker</string>
+    <string name="open">Öffnen</string>
+    <string name="commentHint">Kommentar verfassen&#8230;</string>
+    <string name="meAndFriends">Ich &amp; Freunde</string>
+    <string name="goal">Ziel</string>
+    <string name="location">Ort</string>
+    <string name="friend">Freund</string>
+    <string name="image">Bild</string>
+    <string name="deleteImage">entfernen</string>
+    <string name="replaceImage">ersetzen</string>
+    <string name="postingNote">Poste Eintrag&#8230;</string>
+    <string name="postingComment">Poste Kommentar&#8230;</string>
+    <string name="friendsOf">Freunde von</string>
+    <string name="offlineMessage">Sorry, Du bist offline</string>
+    <string name="offlineRefresh">Nochmal versuchen</string>
+
+	<string name="activityCC_SKIING">Skilanglauf</string>
+	<string name="activityCOMMUTE">Pendeln</string>
+	<string name="activityCORE_FITNESS">Core Fitness</string>
+	<string name="activityCROSS_FIT">Crossfit</string>
+	<string name="activityCROSS_TRAINING">Cross Training</string>
+	<string name="activityCYCLING">Fahrradfahren</string>
+	<string name="activityELLIPTICAL">Elliptical</string>
+	<string name="activityFITNESS">Fitness</string>
+	<string name="activityHIKING">Hiking</string>
+	<string name="activityINLINE_SKATING">Inline Skating</string>
+	<string name="activityPUSH_UP">Push-ups</string>
+	<string name="activityROCK_CLIMBING">Klettern</string>
+	<string name="activityROWING">Rudern</string>
+	<string name="activityRUNNING">Laufen</string>
+	<string name="activitySPINNING">Spinning</string>
+	<string name="activitySWIMMING">Schwimmen</string>
+	<string name="activityWALKING">Walking</string>
+	<string name="activityWEIGHTS">Gewichte</string>
+	<string name="activityYOGA">Yoga</string>
+	<string name="activityFRONT_PLANK">Front Plank</string>
+	<string name="activitySIDE_PLANK">Side Plank</string>
+
+	<!-- ActivityRoutes -->
+	<string name="route">Route</string>
+    <string name="routes">Routen</string>
+    <string name="sortBy">Sortierung</string>
+    <string name="date_asc">Datum (neu..alt)</string>
+    <string name="name_asc">Name (a..z)</string>
+    <string name="distance_asc">Distanz (kurz..lang)</string>
+    <string name="date_desc">Datum (alt..neu)</string>
+    <string name="name_desc">Name (z..a)</string>
+    <string name="distance_desc">Distanz (lang..kurz)</string>
+    <string name="deleteRoute">Lösche Route</string>
+    <string name="confirmDeleteRoute">Willst Du die Route wirklich löschen?</string>
+    <string name="loadingRoutePleaseWait">Lade Route. Bitte warten&#8230;</string>
+    <string name="newRouteActivityTitle">Plane Route</string>
+    <string name="planRoute">Plane Route</string>
+    <string name="routeFromTo">Route</string>
+    <string name="routeFrom">Start</string>
+    <string name="routeTo">Ziel</string>
+    <string name="routeSettings">Einstellungen</string>
+    <string name="routeType">Typ</string>
+    <string name="routeStrategy">Steigung/Gefälle</string>
+    <string name="routeLocale">Sprache</string>
+    <string name="saveRouteDialog">Route speichern</string>
+    <string name="saveRouteText">Bitte geben Sie einen Namen für die Route ein</string>
+    <string name="errorPlanningRoute">Fehler bei der Routenplanung</string>
+    <string name="planningRoute">Plane Route. Bitte warten&#8230;</string>
+    <string name="errorResolvingFrom">Fehler beim Auffinden der Start-Adresse</string>
+    <string name="errorResolvingTo">Fehler beim Auffinden der Ziel-Adresse</string>
+    <string name="to">nach</string>
+    <string name="noRoutes">Keine Routen vorhanden</string>
+    <string name="planNewRoute">Neue Route planen</string>
+
+<!--     <string-array name="feelNames">  -->
+	<string name="feltGREAT">Sehr gut</string>
+	<string name="feltGOOD">gut</string>
+	<string name="feltALRIGHT">ok</string>
+	<string name="feltBLAH">blah</string>
+	<string name="feltTIRED">abgekämpft</string>
+	<string name="feltINJURED">verletzt</string>
+	<string name="feltNONE">Keine Angabe</string>
+
+<!--     <string-array name="routeTypeNames">  -->
+	<string name="routeTypeFastest">Schnellste Strecke</string>
+	<string name="routeTypeShortest">Kürzeste Strecke</string>
+	<string name="routeTypePedestrian">Fußgänger</string>
+	<string name="routeTypeBicycle">Fahrrad</string>
+
+<!--     <string-array name="routeStrategyNames">  -->
+	<string name="routeStrategy_DEFAULT_STRATEGY">Keine Bevorzugung</string>
+	<string name="routeStrategy_AVOID_UP_HILL">Vermeide Steigung</string>
+	<string name="routeStrategy_AVOID_DOWN_HILL">Vermeide Gefälle</string>
+	<string name="routeStrategy_AVOID_ALL_HILLS">Vermeide Höhenunterschiede</string>
+	<string name="routeStrategy_FAVOR_UP_HILL">Bevorzuge Steigung</string>
+	<string name="routeStrategy_FAVOR_DOWN_HILL">Bevorzuge Gefälle</string>
+	<string name="routeStrategy_FAVOR_ALL_HILLS">Bevorzuge Höhenunterschiede</string>
+
+<!--     <string-array name="routeLocaleNames">  -->
+	<string name="routeLocale_en_GB">Englisch (Britisch)</string>
+	<string name="routeLocale_en_US">Englisch (US)</string>
+	<string name="routeLocale_da_DK">Dänisch</string>
+	<string name="routeLocale_nl_NL">Niederländisch</string>
+	<string name="routeLocale_fr_FR">Französisch</string>
+	<string name="routeLocale_de_DE">Deutsch</string>
+	<string name="routeLocale_it_IT">Italienisch</string>
+	<string name="routeLocale_no">Norwegisch</string>
+	<string name="routeLocale_es">Spanisch</string>
+	<string name="routeLocale_sv_SE">Schwedisch</string>
+
+<!--     <string-array name="unitNames">  -->
+	<string name="unitImperial">Imperial</string>
+	<string name="unitMetric">Metrisch"</string>
+
+<!-- speach_interval_duration -->
+	<string name="si_duration_0">Deaktiviert</string>
+	<string name="si_duration_60">1 Minute</string>
+	<string name="si_duration_120">2 Minuten</string>
+	<string name="si_duration_180">3 Minuten</string>
+	<string name="si_duration_240">4 Minuten</string>
+	<string name="si_duration_300">5 Minuten</string>
+	<string name="si_duration_360">6 Minuten</string>
+	<string name="si_duration_420">7 Minuten</string>
+	<string name="si_duration_480">8 Minuten</string>
+	<string name="si_duration_540">9 Minuten</string>
+	<string name="si_duration_600">10 Minuten</string>
+
+<!-- speach_interval_distance -->
+	<string name="si_distance_0">Deaktiviert</string>
+	<string name="si_distance_500">0,5</string>
+	<string name="si_distance_1000">1</string>
+	<string name="si_distance_2000">2</string>
+	<string name="si_distance_3000">3</string>
+	<string name="si_distance_4000">4</string>
+	<string name="si_distance_5000">5</string>
+
+<!-- dateFilterNames -->
+	<string name="dateFilterEver">Gesamte Zeit</string>
+    <string name="dateFilterWeek">Eine Woche</string>
+    <string name="dateFilterTwoWeeks">Zwei Wochen</string>
+	<string name="dateFilterMonth">Ein Monat</string>
+	<string name="dateFilterThreeMonth">Drei Monate</string>
+	<string name="dateFilterSixMonth">Sechs Monate</string>
+	<string name="dateFilterYear">Ein Jahr</string>
+	
+	<string name="about">Über PaceTracker</string>
+	<string name="version_history">Versionen</string>
+    <string name="version_1_0_beta4">-Rename package to de.badaix.pacetracker\n-Migrate to Android Studio\n-Remove facebook\n-Remove Ads\n-Remove in-App purchases\n-Remove dependency to ActionBarSherlock\n-Remove OpenStreetMap\n-Remove "Play in Google Earth"\n-Switch to OpenWeatherMap\n-Fix: keep vibrate mode\n-Fix: route planning\n-Fix: deadlock when loading a session\n-Fix: crash during screen rotate\n-Fix: show map tiles in session history</string>
+    <string name="version_1_0_beta3">-Accumulated time in pace table</string>
+	<string name="version_1_0_beta2">-Verbessertes Scrolling/Paging der Karte\n-Anderes Hintergrundbild</string>
+	<string name="version_1_0_beta1">Erstes öffentliches Release</string>
+		<string name="disclaimer">"THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."</string>
+	<string name="copyright"><![CDATA[
+		<p>
+				<strong>dailymile</strong>
+				<br>Copyright © 2008-2017 <a href="http://www.dailymile.com" target="_blank">dailymile</a>, Inc.</br>
+				</p>
+				
+				<p>
+				<strong>Weather</strong>
+				<br>Powered by <a href="http://openweathermap.org"
+				title="Current weather and forecast"
+				target="_blank">OpenWeatherMap</a></br>
+				</p>
+				
+				<p>
+				<strong>Route planning</strong>
+				<br>Directions Courtesy of <a href="http://www.mapquest.com" target="_blank">MapQuest</a></br>
+				</p>
+				
+				<p>
+				<strong>Supporting libs</strong>
+				<br><a href="http://www.achartengine.org" target="_blank">AChartEngine</a> ©2009 - 2013 The 4ViewSoft Company</br>
+				</p>
+	]]></string>
+    </resources>
+    

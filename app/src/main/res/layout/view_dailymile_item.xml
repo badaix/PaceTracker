@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@drawable/my_drawable" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/linearLayout"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginBottom="6dp"
+              android:layout_marginTop="6dp"
+              android:background="@drawable/drop_shadow"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="2dip"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/ivDmUser"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/user_mini">
+
+        </ImageView>
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvDmUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingLeft="5dip"
+                    android:text="Username"
+                    android:textAppearance="@style/MediumFont"/>
+
+                <TextView
+                    android:id="@+id/tvDmActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="right"
+                    android:text="Activity"
+                    android:textAppearance="@style/MediumFont"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvDmLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingLeft="5dip"
+                    android:text="location"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/darkgrey"/>
+
+                <TextView
+                    android:id="@+id/tvDmDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:gravity="right"
+                    android:text="1.1.1970"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/darkgrey"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+        android:background="@color/blue"/>
+
+    <LinearLayout
+        android:id="@+id/llDmEntry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip">
+
+        <TextView
+            android:id="@+id/tvDmDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="summary"
+            android:textAppearance="@style/MediumFont"/>
+
+        <TextView
+            android:id="@+id/tvDmDistTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="distance / time"
+            android:textAppearance="@style/MediumFont"/>
+
+        <TextView
+            android:id="@+id/tvDmMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web|map"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dip"
+            android:paddingTop="3dip"
+            android:text="message"
+            android:textAppearance="@style/SmallFont"/>
+
+        <LinearLayout
+            android:id="@+id/llDmAddEntries"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCommentCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drop_shadow_footer"
+        android:orientation="vertical"
+        android:paddingBottom="7dp">
+
+        <View
+            android:id="@+id/commentSeperator"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/background"/>
+
+        <TextView
+            android:id="@+id/tvCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web|map"
+            android:gravity="center_vertical"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dip"
+            android:text="0 comments"
+            android:textAppearance="@style/SmallFont"
+            android:textColor="@color/darkgrey"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewComment"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/user_mini"/>
+
+            <TextView
+                android:id="@+id/textViewComment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

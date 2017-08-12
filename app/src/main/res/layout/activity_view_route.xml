@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+
+    <de.badaix.pacetracker.LockableViewPager
+        android:id="@+id/viewRoutePager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/llFooter">
+
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/viewRouteIndicator"
+            style="@style/SmallFont.Inverse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/viewpager"/>
+    </de.badaix.pacetracker.LockableViewPager>
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_overlay"
+        android:gravity="center_horizontal"
+        android:paddingBottom="3dip"
+        android:paddingTop="5dip"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:text="Save route">
+
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

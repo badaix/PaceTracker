@@ -1,0 +1,32 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutGpsSignal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/gps_off"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarGps"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:minHeight="18dip"
+            android:paddingTop="1dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_bar_gps"/>
+
+    </LinearLayout>
+
+</merge>

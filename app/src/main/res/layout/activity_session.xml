@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+    <!--
+        <de.badaix.pacetracker.views.ViewPagerIndicator
+        android:id="@+id/sessionIndicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sessionActionbar"
+        android:background="@color/viewpager"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+    -->
+
+    <de.badaix.pacetracker.LockableViewPager
+        android:id="@+id/sessionPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/sessionLinearLayoutFooter">
+
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/sessionIndicator"
+            style="@style/SmallFont.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/viewpager"/>
+    </de.badaix.pacetracker.LockableViewPager>
+
+    <!--     <LinearLayout
+            android:id="@+id/adParent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sessionLinearLayoutFooter"
+            android:orientation="vertical" >
+        </LinearLayout>
+     -->
+
+    <LinearLayout
+        android:id="@+id/sessionLinearLayoutFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dark_overlay"
+        android:gravity="center_horizontal"
+        android:paddingBottom="3dip"
+        android:paddingTop="5dip"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/buttonSessionStop"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="2"
+            android:background="@android:drawable/btn_default"
+            android:scaleType="fitCenter"
+            android:src="@drawable/av_stop_over_video"/>
+
+        <ImageButton
+            android:id="@+id/buttonSessionPause"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="2"
+            android:background="@android:drawable/btn_default"
+            android:scaleType="fitCenter"
+            android:src="@drawable/av_pause_over_video"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

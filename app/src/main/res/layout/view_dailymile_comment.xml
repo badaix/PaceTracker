@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@drawable/my_drawable" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llComment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginBottom="2dip"
+    android:layout_marginLeft="1dip"
+    android:layout_marginRight="3dip"
+    android:layout_marginTop="2dip"
+    android:background="#0F000000"
+    android:paddingTop="2dip" >
+
+    <ImageView
+        android:id="@+id/ivDmUser"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="1dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="3dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user_avatar" >
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/llDmComment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="3dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvDmUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_weight="5"
+                android:text="type"
+                android:textAppearance="@style/NotSoSmallFont" />
+
+            <TextView
+                android:id="@+id/tvDmDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:text="date"
+                android:textAppearance="@style/SmallFont" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDmMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:gravity="center_vertical"
+            android:text="date"
+            android:textAppearance="@style/SmallFont" android:autoLink="web|map" android:layout_marginBottom="2dip">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

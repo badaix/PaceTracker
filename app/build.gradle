@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "de.badaix.pacetracker"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 7
+        versionName "1.0 beta4"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+
+dependencies {
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.google.android.gms:play-services-plus:11.0.4'
+    compile files('libs/achartengine-1.2.0.jar')
+    compile files('libs/httpclient-4.2.1.jar')
+    compile files('libs/httpcore-4.2.1.jar')
+    compile files('libs/httpmime-4.2.1.jar')
+    compile files('libs/jettison-1.2.jar')
+    compile files('libs/oauth2-client.jar')
+    compile files('libs/oauth2-common-0.2-20100928.154856-1.jar')
+    compile files('libs/slf4j-android-1.5.8.jar')
+}

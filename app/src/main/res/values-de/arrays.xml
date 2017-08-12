@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wind_dir_array">
+		<item>N</item>
+		<item>NNW</item>
+		<item>NW</item>
+		<item>ONO</item>
+		<item>O</item>
+		<item>OSO</item>
+		<item>SO</item>
+		<item>SSO</item>
+		<item>S</item>
+		<item>SSW</item>
+		<item>SW</item>
+		<item>WSW</item>
+		<item>W</item>
+		<item>WNW</item>
+		<item>NW</item>
+		<item>NNW</item>
+    </string-array>
+    
+    <string-array name="weather_array">
+        <item>Gewitter mit leichtem Regen</item>
+        <item>Gewitter mit Regen</item>
+        <item>Gewitter mit starkem Regen</item>
+        <item>Leichtes Gewitter</item>
+        <item>Gewitter</item>
+        <item>Schweres Gewitter</item>
+        <item>Zerrissenes Gewitter</item>
+        <item>Gewitter mit leichtem Nieselregen</item>
+        <item>Gewitter mit Nieselregen</item>
+        <item>Gewitter mit starkem Nieselregen</item>
+        <item>Leichter Niesel</item>
+        <item>Nieselregen</item>
+        <item>Schwerer Niesel</item>
+        <item>Leichter Nieselregen</item>
+        <item>Nieselregen</item>
+        <item>Schwerer Nieselregen</item>
+        <item>Schauer und Nieselregen</item>
+        <item>Schwere Schauer und Nieselregen</item>
+        <item>Schauer Nieselregen</item>
+        <item>Leichter Regen</item>
+        <item>Mäßiger Regen</item>
+        <item>Schwerer Regen</item>
+        <item>Sehr starker Regen</item>
+        <item>Extremer Regen</item>
+        <item>Gefrierender Regen</item>
+        <item>Leichter Regenschauer</item>
+        <item>Regenschauer</item>
+        <item>Schwerer Regenschauer</item>
+        <item>Regenschauer</item>
+        <item>Leichter Schnee</item>
+        <item>Schnee</item>
+        <item>Starker Schneefall</item>
+        <item>Schneeregen</item>
+        <item>Graupelschauer</item>
+        <item>Leichter Regen und Schnee</item>
+        <item>Regen und Schnee</item>
+        <item>Leichter Schneeschauer</item>
+        <item>Schneeschauer</item>
+        <item>Schwerer Schneeschauer</item>
+        <item>Nebel</item>
+        <item>Rauch</item>
+        <item>Dunst</item>
+        <item>Sand, Staub wirbelt</item>
+        <item>Nebel</item>
+        <item>Sand</item>
+        <item>Staub</item>
+        <item>Vulkanasche</item>
+        <item>Bögen</item>
+        <item>Tornado</item>
+        <item>Klarer Himmel</item>
+        <item>Wenige wolken</item>
+        <item>Aufgelockerte Bewölkung</item>
+        <item>Aufgelockert bewölkt</item>
+        <item>Bedeckt</item>
+        <item>Tornado</item>
+        <item>Tropensturm</item>
+        <item>Hurrikan</item>
+        <item>Kalt</item>
+        <item>Heiß</item>
+        <item>Windig</item>
+        <item>Hagel</item>
+        <item>Ruhig</item>
+        <item>Leichte Brise</item>
+        <item>Leichte Briese</item>
+        <item>Mäßige Brise</item>
+        <item>Frische Briese</item>
+        <item>Starke Brise</item>
+        <item>Starker Wind, nahe Sturm</item>
+        <item>Sturm</item>
+        <item>Schwerer Sturm</item>
+        <item>Sturm</item>
+        <item>Heftiger Sturm</item>
+        <item>Hurrikan</item>
+    </string-array>
+
+</resources>

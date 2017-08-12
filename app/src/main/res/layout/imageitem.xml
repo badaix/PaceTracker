@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@drawable/my_drawable" -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/LinearLayout01"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="left"
+              android:layout_marginBottom="7dip"
+              android:layout_marginLeft="2dip"
+              android:layout_marginTop="7dip"
+              android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageItemImageView"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_weight="0.02"
+        android:src="@drawable/icon">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="3dip"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text">
+    </TextView>
+
+</LinearLayout>

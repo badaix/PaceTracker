@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@drawable/my_drawable" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/LinearLayout01"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_marginBottom="2dip"
+              android:layout_marginTop="2dip"
+              android:background="@drawable/drop_shadow"
+              android:paddingBottom="4dip"
+              android:paddingLeft="4dip"
+              android:paddingRight="4dp"
+              android:paddingTop="4dip">
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="3dp">
+
+        <ImageView
+            android:id="@+id/imageViewMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/transparent"/>
+
+        <ImageView
+            android:id="@+id/imageViewType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_border"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="2dip">
+
+        <ImageView
+            android:id="@+id/imageViewDailyMile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/dailymile_offline"/>
+
+        <ImageView
+            android:id="@+id/imageViewFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/facebook_offline"/>
+
+        <ImageView
+            android:id="@+id/imageViewGPlus"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/gplus_offline"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingRight="3dip">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHistType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:lines="1"
+                android:text="type"
+                android:textAppearance="@style/SmallFont"/>
+
+            <TextView
+                android:id="@+id/tvHistDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:maxLines="1"
+                android:text="date"
+                android:textAppearance="@style/SmallFont"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/blue"
+            android:paddingRight="2dip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHistDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="duration"
+                android:textAppearance="@style/MediumFont"/>
+
+            <TextView
+                android:id="@+id/tvHistDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="speed"
+                android:textAppearance="@style/MediumFont"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

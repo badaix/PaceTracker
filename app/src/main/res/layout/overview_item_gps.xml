@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@drawable/my_drawable" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical|fill_horizontal"
+              android:layout_marginBottom="2dip"
+              android:layout_marginTop="2dip"
+              android:background="@drawable/drop_shadow"
+              android:baselineAligned="true"
+              android:orientation="vertical"
+              android:padding="2dip">
+
+    <de.badaix.pacetracker.widgets.GpsIndicator
+        android:id="@+id/linearLayoutGpsSignal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dip"
+        android:layout_marginTop="7dip"
+        android:weightSum="2"/>
+
+
+</LinearLayout>
